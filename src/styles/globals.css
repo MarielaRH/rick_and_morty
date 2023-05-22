@@ -2,7 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-:root{
-  background-color: #202124;
-  color: white;
+.transition {
+  transition: all 500ms;
+}
+
+.body-dark {
+  background-color: #1e1e20;
+  color: #e4e9f2;
+}
+
+.body-light {
+  background-color: #fffefe;
+  color: #000000;
+}
+
+.main-title {
+  background: rgb(96, 191, 129);
+  background: linear-gradient(69deg, #60bf81 30%, #a4cc38 69%);
+}
+
+.title-gradient {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.shadow-image:hover {
+  box-shadow: 35px 35px 200px #60bf81, -35px -35px 200px #b6f25c;
+  border-radius: 50%;
+}
+
+.shadow-image-item {
+  background-color: #1e1e20;
+  border-radius: 50%;
+  box-shadow: 25px 25px 100px #977ef2, -25px -25px 100px #498cda;
+}
+
+.text-hover:hover {
+  border-bottom: solid 1px white;
+}
+
+.title-purple {
+  color: #9d9eff;
+}
+
+.background-card-light {
+  background-color: #e4e9f2;
+  color: black;
+}
+
+.background-card-dark {
+  background-color: #292a2e;
+  color: #e4e9f2;
+}
+
+.card-hover:hover {
+  box-shadow: 0px 0px 0px 2px #9d9eff;
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+#characterImage {
+  box-shadow: 0px 10px 30px #292a2e;
+}
+
+#characterInfo > p{
+  background-color: #292a2e;
+  padding: 10px 15px;
+  border-radius: 10px;
+  min-width: 250px;
+}
+
+strong {
+  font-weight: 550;
+  color: #a4cc38;
+}
+
+p > strong{
+  padding-right: 10px;
 }
